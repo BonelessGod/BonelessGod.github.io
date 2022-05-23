@@ -50,7 +50,7 @@ font-family: 'Source Sans Pro', sans-serif;
     &:hover {
        // background-color: $color-more-light;
         //color: $color-text-dark;
-
+        border-radius: 2rem;
         box-shadow: $button-surrounding-hover;
     }
 }
