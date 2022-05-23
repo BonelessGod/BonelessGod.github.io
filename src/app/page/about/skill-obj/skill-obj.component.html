@@ -1,0 +1,12 @@
+<div class="skill">
+    <div class="skill__container">
+        <h1>{{skill.language | uppercase}}</h1>
+        <img src="{{skill.logo}}" alt="Logo de {{skill.language}}">
+    </div>
+
+    <div class="skill__container-bar">
+        <div class="skill__container-bar--template"></div>
+        <div class="skill__container-bar--active reveal" [ngStyle]="{width: skill.level}"></div>
+    </div>
+
+</div>

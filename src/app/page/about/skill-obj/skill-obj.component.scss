@@ -1,0 +1,57 @@
+@import '../../../models/variables';
+
+.skill {
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+    border-radius: 1rem;
+    box-shadow: $gradient-surrounding;
+    h1 {
+        font-size: small;
+    }
+    img{
+        @media (max-width: 850px) {
+            height: 3rem;
+            width: 3rem;
+        }
+        height: 5rem;
+        width: 5rem;
+    }
+    &__container {
+        width: 20%;
+        &-bar{
+            position: relative;
+            width: 70%;
+            &--template, &--active{
+
+                top: 0;
+                height: 2rem;
+                background-color: $color-lighter;
+                margin: 1rem;
+                border-radius: 1rem;
+            }
+            &--template {
+                box-shadow: $button-surrounding-hover;
+                width: 100%;
+            }
+            &--active {
+                box-shadow: $gradient-surrounding;
+                position: absolute;
+                background-color: $color-bar;
+                &.reveal {
+                    transform: scaleX(0);
+                    transition: 1.5s ease-in-out;
+                    transform-origin: left;
+                    &.active {
+                        transform: scaleX(1);
+                        
+                    }
+                }
+            }
+        }
+    }
+}

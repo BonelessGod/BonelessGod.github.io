@@ -1,0 +1,17 @@
+@import '/src/app/models/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+    color: $color-text-dark;
+
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background-color: $color-background;
+    width: 100%;
+}

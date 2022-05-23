@@ -1,0 +1,25 @@
+@import '../../models/variables';
+
+.landing{
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        box-shadow: $gradient-surrounding;
+        border-radius: 1rem;
+        h2{
+            font-family: Coda;
+        }
+        p {
+            margin-top: 2rem;
+        }
+        a {
+            @include button-style;
+        }
+    }
+}

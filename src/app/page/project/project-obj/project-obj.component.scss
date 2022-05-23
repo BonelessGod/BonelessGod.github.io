@@ -1,0 +1,51 @@
+@import '../../../models/variables';
+
+
+
+.project {
+    width: auto;
+    &__container{
+        display: flex;
+        flex-flow: column ;
+        align-items: center;
+        text-align: center;
+        border: solid 1px rgba(255, 255, 255, 0.2);
+
+        @media (max-width: 850px) {
+            width: 80%;
+        }
+
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        background-color: $color-lighter;
+        border-radius: 2.5rem;
+        transition: 220ms;
+
+        box-shadow: $gradient-surrounding;   
+        img{
+            width: 90%;
+            border-radius: 1rem;
+            box-shadow: $gradient-surrounding;   
+         
+
+        }
+        &:hover {
+            border-radius: 1rem;
+        }
+        h1 {
+            font-size: xx-large;
+            padding: 1rem;
+            font-family: Coda;
+        }
+        p{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: large;
+        }
+        a {
+            @include button-style;
+            width: 15rem;
+        }
+    }
+}
