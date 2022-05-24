@@ -6,12 +6,12 @@
     width: 100%;
     height: auto;
 
-    color: $color-text-light;
+    color: textColor($color-main);
 
     font-family: 'Source Sans Pro';
 }
 
 body {
-    background-color: $color-background;
+    background-color: $color-main;
     width: 100%;
 }

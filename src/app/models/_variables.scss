@@ -1,4 +1,10 @@
-$color-main: #1db954;
+$color-main: #ccd6ec;
+//rgb(200 + random(10), 200 + random(10), 200 + random(10));
+$color-main-light: lighten($color-main, 50);
+$color-main-dark: darken($color-main, 25);
+
+
+
 $color-component: rgb(33, 33, 33);
 // $color-background: #d3d3d3;
 // #545454
@@ -8,19 +14,22 @@ $color-more-light: #b3b3b3;
 $color-text-dark: #050505;
 $color-text-light: #f5f5f5;
 
+$gradient-value-one: 10px;
+$gradient-blur: 17px;
+
 $color-bar: #bb2a2a;
 
-$gradient-surrounding: -21px 21px 39px #653838,
-21px -21px 39px #955252;
+$gradient-surrounding: (-$gradient-value-one) ($gradient-value-one) $gradient-blur $color-main-dark,
+(-$gradient-value-one) (-$gradient-value-one) $gradient-blur $color-main-light;
 
-$gradient-surrounding-rev:  inset -21px 21px 39px #653838,
-inset 21px -21px 39px #955252;
+$gradient-surrounding-rev:  inset -$gradient-value-one $gradient-value-one $gradient-blur $color-main-dark,
+inset ($gradient-value-one) (-$gradient-value-one) $gradient-blur $color-main-light;
 
-$button-surrounding: -7px 7px 14px #653838,
-7px -7px 14px #955252;
+$button-surrounding: -7px 7px 14px $color-main-dark,
+7px -7px 14px $color-main-light;
 
-$button-surrounding-hover: inset -7px 7px 14px #653838,
-inset 7px -7px 14px #955252;
+$button-surrounding-hover: inset -7px 7px 14px $color-main-dark,
+inset 7px -7px 14px $color-main-light;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400&family=Source+Sans+Pro:wght@300&display=swap');
@@ -33,7 +42,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 @mixin button-style {
     width: 7rem;
-    background-color: $color-lighter;
+    background-color: $color-main;
     margin: 1rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
     font-size: large;
@@ -43,6 +52,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
     font-family: Coda;
 
+    text-decoration: none;
 
 
     box-shadow: $button-surrounding;
@@ -53,4 +63,19 @@ font-family: 'Source Sans Pro', sans-serif;
         border-radius: 2rem;
         box-shadow: $button-surrounding-hover;
     }
+}
+
+@function textColor($color) {
+
+    $darkness: lightness(#e1d7d2);
+
+
+    @if $darkness < 50 {
+        $result: $color-text-light;
+        @return $result;
+    } @else {
+        $result: $color-text-dark;
+        @return $result;
+    }
+
 }

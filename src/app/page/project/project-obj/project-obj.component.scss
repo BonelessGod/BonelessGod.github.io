@@ -18,7 +18,7 @@
         width: 90%;
         height: auto;
         margin: 5%;
-        background-color: $color-lighter;
+        background-color: $color-main;
         border-radius: 2.5rem;
         transition: 220ms;
 
@@ -26,7 +26,7 @@
         img{
             width: 90%;
             border-radius: 1rem;
-            box-shadow: $gradient-surrounding;   
+            box-shadow: $gradient-surrounding-rev;   
          
 
         }
