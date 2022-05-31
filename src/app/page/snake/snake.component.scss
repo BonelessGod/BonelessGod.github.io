@@ -1,0 +1,13 @@
+@import '../../models/variables';
+
+#gameCanvas {
+    width: 400px;
+    height: 400px;
+}
+
+.snake {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
