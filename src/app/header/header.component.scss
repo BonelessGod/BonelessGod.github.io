@@ -26,6 +26,7 @@
         border-radius: 50%;
         margin: 1rem;
         box-shadow: $gradient-surrounding;
+        border: $color-main solid 0.25rem;
     }
     &__content {
         display: flex;
@@ -68,12 +69,13 @@
 
 
                 box-shadow: $button-surrounding;
-                transition: 200ms;
+                transition: 300ms;
                 &:hover {
                    // background-color: $color-more-light;
                     //color: $color-text-dark;
 
                     box-shadow: $button-surrounding-hover;
+                    transition: 300ms;
                 }
                 &#contact {
                     background-color: $color-bar;

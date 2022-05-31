@@ -12,6 +12,7 @@ import { AboutComponent } from './page/about/about.component';
 import { SkillObjComponent } from './page/about/skill-obj/skill-obj.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

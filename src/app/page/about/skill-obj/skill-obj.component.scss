@@ -3,6 +3,11 @@
 .skill {
     width: 90%;
     height: 10rem;
+    @media (max-width: 850px) {
+        height: 4.5rem;
+    }
+        
+    
     display: flex;
     flex-flow: row;
     align-items: center;

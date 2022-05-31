@@ -1,20 +1,17 @@
-<div class="snake">
-    <canvas id="gameCanvas"></canvas>
-</div>
 
-<script src="./script/snake.js"></script>
 
-<!-- <script>
-
+    const snakeboard = document.querySelector('#Canvas');
+    const snakeboard_ctx = snakeboard.getContext("2d");
     const board_border = 'black';
     const board_background = 'white';
     const snake_col = 'lightblue';
     const snake_border = 'darkblue';
-
-    const snakeboard = document.getElementById("gameCanvas");
-    const snakeboard_ctx = gameCanvas.getContext("2d");
+    console.log(snakeboard);
 
     main();
+
+
+
 
     let snake = [
         {x: 200, y: 200},
@@ -27,6 +24,7 @@
     function main() {
         clearCanvas();
         drawSnake();
+
     }
 
     function clearCanvas() {
@@ -49,6 +47,3 @@
     }
 
 
-
-
-</script> -->

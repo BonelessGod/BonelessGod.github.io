@@ -19,3 +19,14 @@
         @include button-style;
     }
 }
+
+.skill__container {
+    display: flex;
+    flex-flow: row wrap;
+}
+app-skill-obj {
+    width: 50%;
+    @media (max-width: 850px) {
+        width: 100%;    
+    }
+}

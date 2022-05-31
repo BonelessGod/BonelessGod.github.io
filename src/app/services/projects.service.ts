@@ -20,13 +20,6 @@ export class ProjectService {
             description: 'Site réalisée pour le musicien/cosplayer Sydionys.',
             imageUrl: 'assets/thumbnail/sydionys.png',
             link: 'https://bonelessgod.github.io/sydionys'
-        },
-        {
-            id: 3,
-            title: 'Portfolio #1',
-            description: 'Site réalisée pour moi même en utilisant HTML, SCSS et JScript en natif',
-            imageUrl: 'assets/thumbnail/sydionys.png',
-            link: 'https://bonelessgod.github.io/portfolio'
         }
     ]
     getAllProject(): Project[] {
