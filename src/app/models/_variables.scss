@@ -67,7 +67,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 @function textColor($color) {
 
-    $darkness: lightness(#e1d7d2);
+    $darkness: lightness($color);
 
 
     @if $darkness < 50 {
