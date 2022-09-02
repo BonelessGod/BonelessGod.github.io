@@ -16,7 +16,8 @@
     border-radius: 1rem;
     box-shadow: $gradient-surrounding;
     h1 {
-        font-size: small;
+        font-size: medium;
+        align-items: center;
     }
     img{
         @media (max-width: 850px) {
@@ -25,6 +26,7 @@
         }
         height: 5rem;
         width: 5rem;
+        padding: 1rem;
     }
     &__container {
         width: 20%;

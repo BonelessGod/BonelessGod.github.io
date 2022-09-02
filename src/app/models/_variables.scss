@@ -1,6 +1,6 @@
-$color-main: #ccd6ec;
+$color-main: #1a1f35;
 //rgb(200 + random(10), 200 + random(10), 200 + random(10));
-$color-main-light: lighten($color-main, 50);
+$color-main-light: lighten($color-main, 5%);
 $color-main-dark: darken($color-main, 25);
 
 
@@ -14,19 +14,19 @@ $color-more-light: #b3b3b3;
 $color-text-dark: #050505;
 $color-text-light: #f5f5f5;
 
-$gradient-value-one: 10px;
-$gradient-blur: 17px;
+$gradient-value-one: 12px;
+$gradient-blur: 24px;
 
 $color-bar: #bb2a2a;
 
-$gradient-surrounding: (-$gradient-value-one) ($gradient-value-one) $gradient-blur $color-main-dark,
+$gradient-surrounding: ($gradient-value-one) ($gradient-value-one) $gradient-blur $color-main-dark,
 (-$gradient-value-one) (-$gradient-value-one) $gradient-blur $color-main-light;
 
 $gradient-surrounding-rev:  inset -$gradient-value-one $gradient-value-one $gradient-blur $color-main-dark,
 inset ($gradient-value-one) (-$gradient-value-one) $gradient-blur $color-main-light;
 
-$button-surrounding: -7px 7px 14px $color-main-dark,
-7px -7px 14px $color-main-light;
+$button-surrounding: 7px 7px 14px $color-main-dark,
+-7px -7px 14px $color-main-light;
 
 $button-surrounding-hover: inset -7px 7px 14px $color-main-dark,
 inset 7px -7px 14px $color-main-light;
@@ -38,6 +38,14 @@ inset 7px -7px 14px $color-main-light;
 font-family: 'Coda', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 */
+
+h1 {
+    color:#ff0055;
+    background: -webkit-linear-gradient(90deg, #ff0055, #f8afc7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //text-shadow: #80002a 0px 0px 5px;
+}
 
 
 @mixin button-style {
