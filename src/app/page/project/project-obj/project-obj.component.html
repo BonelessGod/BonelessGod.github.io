@@ -2,5 +2,11 @@
     <h1>{{ project.title | uppercase}}</h1>
     <img src="{{ project.imageUrl }}" alt="Illustration pour le site {{ project.title}}">
     <p>{{project.description}}</p>
+    <div class="project__container-techno">
+        <div *ngFor="let techno of project.techno" class="project__container-techno-obj">
+            <img src="{{ techno }}" alt="">
+        </div>
+    </div>
+    
     <a href="{{project.link}}">Visiter</a>
 </div>

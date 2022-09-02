@@ -34,6 +34,26 @@
         &:hover {
             border-radius: 1rem;
         }
+        &-techno{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            &-obj{
+                width: 4rem;
+                height: 4rem;
+                box-shadow: $gradient-surrounding; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                img{
+                    border-radius: 0rem;
+                }
+            }
+        }
         h1 {
             font-size: xx-large;
             padding: 1rem;

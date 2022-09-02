@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Project } from "../models/project.model";
+import { SkillService } from "./skills.service";
 
 @Injectable({
     providedIn: 'root'
@@ -11,6 +12,10 @@ export class ProjectService {
             id: 1,
             title: 'Union Skateboard',
             description: `Site créé pour l'association Union Skateboard basée sur Dijon`,
+            techno: [
+                'assets/logo/ANGULAR.svg', 
+                "assets/logo/SASS.svg", 
+                ],
             imageUrl: 'assets/thumbnail/usb.png',
             link: `https://bonelessgod.github.io/unionskateboard`
         },
@@ -19,6 +24,11 @@ export class ProjectService {
             title: 'Sydionys',
             description: 'Site réalisée pour le musicien/cosplayer Sydionys.',
             imageUrl: 'assets/thumbnail/sydionys.png',
+            techno: [
+                "assets/logo/HTML.svg", 
+                "assets/logo/CSS.svg", 
+                'assets/logo/JSCRIPT.svg'
+                ],
             link: 'https://bonelessgod.github.io/sydionys'
         }
     ]
