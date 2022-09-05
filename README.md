@@ -5,7 +5,7 @@ Le site est entièrement réalisé avec:
 - SCSS;
 
 TODO: 
-- Intégrer un formulaire destiné à l'envoi de mail
+- Intégrer un formulaire de contact alimentant une base de données
 - Améliorer la position des boutons du header
 - Ajouter un footer incluant mes réseaux sociaux ainsi que le lien vers le repo
 - Ajouter, sur les project-card, un lien vers le repo du projet

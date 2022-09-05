@@ -17,9 +17,10 @@ export class ProjectService {
                 "assets/logo/SASS.svg", 
                 ],
             imageUrl: 'assets/thumbnail/usb.png',
-            link: `https://bonelessgod.github.io/unionskateboard`
+            link: `https://unionskateboard.fr/`,
+            github: `https://github.com/BonelessGod/unionskateboard-new`,
         },
-        {
+        /*{
             id: 2,
             title: 'Sydionys',
             description: 'Site réalisée pour le musicien/cosplayer Sydionys.',
@@ -28,9 +29,9 @@ export class ProjectService {
                 "assets/logo/HTML.svg", 
                 "assets/logo/CSS.svg", 
                 'assets/logo/JSCRIPT.svg'
-                ],
+                    ],
             link: 'https://bonelessgod.github.io/sydionys'
-        }
+        }*/
     ]
     getAllProject(): Project[] {
         return this.project;

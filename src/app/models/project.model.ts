@@ -5,4 +5,5 @@ export class Project {
     techno?: Array<string>;
     imageUrl!: string;
     link!: string;
+    github?: string;
 }
