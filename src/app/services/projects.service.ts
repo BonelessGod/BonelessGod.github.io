@@ -16,9 +16,21 @@ export class ProjectService {
                 'assets/logo/ANGULAR.svg', 
                 "assets/logo/SASS.svg", 
                 ],
-            imageUrl: 'assets/thumbnail/usb.png',
+            imageUrl: 'assets/thumbnail/USB.jpg',
             link: `https://unionskateboard.fr/`,
             github: `https://github.com/BonelessGod/unionskateboard-new`,
+        },
+        {
+            id: 2,
+            title: 'Portfolio',
+            description: `Mon portfolio, vous êtes dessus`,
+            techno: [
+                'assets/logo/ANGULAR.svg',
+                "assets/logo/SASS.svg",
+                ],
+            imageUrl: 'assets/thumbnail/portfolio.jpg',
+            link: `https://kilianduclos.com/`,
+            github: `https://github.com/BonelessGod/BonelessGod.github.io`,
         },
         /*{
             id: 2,
